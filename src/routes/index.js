@@ -7,6 +7,7 @@ routes.get("/", (req, res) => {
 
 const Dev = require( './../controllers/DevController' )
 
+routes.get( '/devs', Dev.index )
 routes.post( '/devs', Dev.store )
 
 module.exports = routes
